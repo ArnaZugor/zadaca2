@@ -15,12 +15,14 @@ public class Main {
         }
 
 
+
         int taskTwoValueA = 12;
         int taskTwoValueB = 5;
 
         if (taskTwoValueA>10 && taskTwoValueA%3 ==0 && taskTwoValueA<=10000){
             System.out.println("Is it possible to divide "+taskTwoValueA + " by " + taskTwoValueB + " :" + (taskTwoValueA%taskTwoValueB ==0));
         }
+
 
 
         int lastTaskNumberA = 68;
@@ -42,10 +44,13 @@ public class Main {
             }
         }
 
+
         int radiusOfCircle = 4;
         double areaOfCircle = Math.PI * (radiusOfCircle*radiusOfCircle);
         System.out.println(areaOfCircle);
 
+
+        
 
         int valueX =5;
         System.out.println((valueX+valueX+6)/2 - valueX);
@@ -54,34 +59,51 @@ public class Main {
         System.out.println(valueAmount%2==0);
 
 
-        int novacUKasi = 100;
-        int racun = 40;
 
 
-        if (novacUKasi>100 && racun>0){
+        int moneyInCashRegister = 100;
+        int check = 40;
+
+
+        if (moneyInCashRegister>100 && check>0){
             System.out.println("you have too much money");
-        }else if (novacUKasi<=100 && racun<=0){
+        }else if (moneyInCashRegister<=100 && check<=0){
             System.out.println("You didn't buy anything, did you?");
-        }else if (novacUKasi<=100 && racun<0){
+        }else if (moneyInCashRegister<=100 && check<0){
             System.out.println("Did you maybe break something? " + "Did you maybe break something?");
         }else{
 
-            int kusur = novacUKasi - racun;
-            int dvadesetKM = kusur/20;
-            System.out.println("dvadeset KM: " + dvadesetKM);
+            int change = moneyInCashRegister - check;
+            change = 63;
 
-            int desetKM = kusur/10;
-            System.out.println("Deset KM: " + desetKM);
+            int twentyKM = 20;
+            int tenKM = 10;
+            int twoKM = 2;
+            int oneKM = 1;
 
-            int dvaKM = kusur/2;
-            System.out.println("Dvije KM: " + dvaKM);
+            int bankNote = twentyKM;
+            int numberOfBankNotes = 0;
 
-            int jedanKM = kusur/1;
-            System.out.println("Jedna KM: " + jedanKM);
+            numberOfBankNotes = change/bankNote;
+            change = change -(numberOfBankNotes * bankNote);
+            System.out.println(bankNote + " KM: " + numberOfBankNotes);
+
+            bankNote = tenKM;
+            numberOfBankNotes = change/bankNote;
+            change = change -(numberOfBankNotes * bankNote);
+            System.out.println(bankNote + " KM: " + numberOfBankNotes);
+
+            bankNote = twoKM;
+            numberOfBankNotes = change/bankNote;
+            change = change -(numberOfBankNotes * bankNote);
+            System.out.println(bankNote + " KM: " + numberOfBankNotes);
+
+            bankNote = oneKM;
+            numberOfBankNotes = change/bankNote;
+            change = change -(numberOfBankNotes * bankNote);
+            System.out.println(bankNote + " KM: " + numberOfBankNotes);
+
         }
-
-
-
 
     }
 
